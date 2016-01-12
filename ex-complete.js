@@ -281,8 +281,11 @@ putDash(noDash);
 
 var myArray = [123, 456, "string", "150 lbs"];
 
-function selectNums (arrayContents) {
-  
+function numbersOnly (array) {
+  for (var i = 0; i <= array.length; i++) {
+    
+  }
+
 }
 
 
