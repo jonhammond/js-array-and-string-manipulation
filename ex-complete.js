@@ -279,17 +279,32 @@ putDash(noDash);
 
 // 1. Write a function to remove every item in an array that is not a number.
 
-var myArray = [123, 456, "string", "150 lbs"];
+var myArray = [123, 456, "string", "150 lbs", "999"];
+var numbersBag = [];
 
 function numbersOnly (array) {
   for (var i = 0; i <= array.length; i++) {
-    
-  }
+    if ( isNaN(array[i]) === false) {
+      numbersBag.push(array[i]);
+    };
+  };
+  console.log(numbersBag);
+};
 
-}
+numbersOnly(myArray);
 
 
 // 1. Write a JavaScript function to get a random item from an array.
+
+var fuckThisArray = [0, 2, 55, "STRING", "beep", "boop", 123456789];
+
+function randomItem (fuckShitBalls) {
+  for (var i = 0; i < fuckThisArray.length; i++) {
+    console.log(fuckThisArray.length);
+  };
+};
+
+randomItem(fuckThisArray);
 
 // 1. Write a function that will take in a string and returns that same string in reverse.
 
