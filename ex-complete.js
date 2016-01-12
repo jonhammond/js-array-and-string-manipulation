@@ -123,8 +123,8 @@ console.log(names);
 var firstNums = [1, 2, 3];
 var secondNums = [4, 5, 6];
 
-firstNums.concat(secondNums);
-console.log(firstNums);
+var newNums = firstNums.concat(secondNums);
+console.log(newNums);
 
 // Using ```.join()``` :
 
@@ -135,8 +135,8 @@ console.log(firstNums);
 // ```
 
 var arr = ['Bradley', 'is', 'super', 'amazing'];
-arr.join(' ');
-console.log(arr);
+var arr_new = arr.join(' ');
+console.log(arr_new);
 
 // ###Section 3
 
@@ -152,14 +152,23 @@ console.log(arr);
 //   ans => 'Javascript is really really really great'
 // ```
 
-// Using ```.toUpperCase()```
+var str1 = 'Javascript is really ';
+var str2 = 'really really great!';
 
+var str3 = str1.concat(str2);
+console.log(str3);
+
+// Using ```.toUpperCase()```
 
 // ```js
 //   var talk = 'Now I\'m Shouting'
 
 //   ans => 'NOW I\'M SHOUTING'
 // ```
+
+var talk = 'Now I\'m Shouting';
+var caps = talk.toUpperCase();
+console.log(caps);
 
 // Using ```.toLowerCase()``` :
 
@@ -169,6 +178,10 @@ console.log(arr);
 //   ans => 'everyone be quiet'
 // ```
 
+var shout = 'EVERYONE BE QUIET';
+var small = shout.toLowerCase();
+console.log(small);
+
 // Using ```.charAt()``` :
 
 // ```js
@@ -176,6 +189,9 @@ console.log(arr);
 
 //   ans => 'z'
 // ```
+
+var string = 'Super Amazing Stuff';
+console.log(string.charAt(9));
 
 // Using ```.slice()``` :
 
@@ -185,6 +201,10 @@ console.log(arr);
 //   ans => 'Edward Swivington'
 // ```
 
+var fullTitle = 'Lord Edward Swivington the 3rd';
+var nickName = fullTitle.slice(5, 22);
+console.log(nickName);
+
 // Using ```.split()``` :
 
 // ```js
@@ -192,10 +212,18 @@ console.log(arr);
 
 //   ans => ['1', '9', '9', '0']
 
+var year = '1990';
+var individualNums = year.split('');
+console.log(individualNums);
+
 //   var quote = 'Why did it have to be snakes?'
 
 //   ans => ['Why', 'did', 'it', 'have', 'to', 'be', 'snakes?']
 // ```
+
+var quote = 'Why did it have to be snakes?';
+var jones = quote.split(' ');
+console.log(jones);
 
 // Using ```.trim()``` :
 
@@ -204,6 +232,10 @@ console.log(arr);
 
 //   ans => 'Here I am. ROCK you like a hurricane.'
 // ```
+
+var lyric = '    Here I am. ROCK you like a hurricane.      '
+var edited = lyric.trim();
+console.log(edited);
 
 // ###Section 4
 
