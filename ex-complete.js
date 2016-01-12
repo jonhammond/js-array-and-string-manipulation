@@ -299,9 +299,8 @@ numbersOnly(myArray);
 var fuckThisArray = [0, 2, 55, "STRING", "beep", "boop", 123456789];
 
 function randomItem (fuckShitBalls) {
-  for (var i = 0; i < fuckThisArray.length; i++) {
-    console.log(fuckThisArray.length);
-  };
+  var index = Math.floor(Math.random(0, fuckShitBalls.length)*fuckShitBalls.length);
+  console.log(fuckShitBalls[index]);
 };
 
 randomItem(fuckThisArray);
