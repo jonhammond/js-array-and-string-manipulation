@@ -241,9 +241,50 @@ console.log(edited);
 
 // 1. Write a function that will find the index of all the "o"s in "Oy! I am a normal string!" regardless of case.
 
+var string = "Oy! I am a normal string!";
+var stringOs = [];
+
+function getTheO (something) {
+  for (var i=0; i <=string.length; i++) {
+    if ((string[i] === "O") || (string[i] === "o")) {
+      stringOs.push(i);
+    }
+  }
+  console.log(stringOs); 
+};
+
+getTheO(string);
+
 // 1. Write a function which accepts a number as input and inserts dashes (-) between every two numbers. For example if you accept 025468 the output should be 02-54-68
 
+var noDash = "234567";
+var dash = [];
+console.log(typeof noDash);
+console.log(typeof dash);
+
+function putDash (numbers) {
+  parseInt(numbers);
+  for (var i = 0; i < numbers.length; i ++) {
+    if (!(i % 2 === 0) && i < numbers.length - 1) {
+      dash.push(numbers[i]+"-");
+    }
+    else {
+      dash.push(numbers[i]);
+    };
+  };
+  console.log(dash.join(''));
+};
+
+putDash(noDash);
+
 // 1. Write a function to remove every item in an array that is not a number.
+
+var myArray = [123, 456, "string", "150 lbs"];
+
+function selectNums (arrayContents) {
+  
+}
+
 
 // 1. Write a JavaScript function to get a random item from an array.
 
