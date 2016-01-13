@@ -341,7 +341,20 @@ reverse_a_number(ran_number);
 
 // 1. Write a JavaScript function that takes in a string and returns it with letters in alphabetical order
 
-var sentence = "I am a sentence."
+var sentence = "I am a sentence.";
+var letters = [];
+
+function reverse_a_string(text) {
+  for (var i=0; i < text.length; i ++) {
+    temp_string = text.split('');
+    letters.push(temp_string[i]);
+    letters.sort();
+    };
+  console.log(letters.join(""));
+};
+
+reverse_a_string(sentence);
+
 
 // 1. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 // ```js
