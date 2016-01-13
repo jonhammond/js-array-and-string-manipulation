@@ -307,13 +307,41 @@ randomItem(fuckThisArray);
 
 // 1. Write a function that will take in a string and returns that same string in reverse.
 
+var offensive = "This is a fucking string, motherfucker.";
+var backwardsAF = "";
+
+function reverse_o_matic (string) {
+  for (var i=string.length -1; i >= 0; i--) {
+    backwardsAF += string[i];
+  };
+  console.log(backwardsAF);
+};
+
+reverse_o_matic(offensive);
+
 // 1. Write a JavaScript function that reverse a number e.g.
 // ```js
 // Example x = 32243;
 // Expected Output : 34223
 // ```
 
+var ran_number = 123456;
+
+var rev_number = "";
+
+function reverse_a_number (numberString) {
+  temp_number = numberString.toString();
+  for (var i=temp_number.length -1; i >= 0; i--) {
+    rev_number += temp_number[i];
+  };
+  console.log(rev_number);
+};
+
+reverse_a_number(ran_number);
+
 // 1. Write a JavaScript function that takes in a string and returns it with letters in alphabetical order
+
+var sentence = "I am a sentence."
 
 // 1. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
 // ```js
