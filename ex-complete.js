@@ -362,6 +362,23 @@ reverse_a_string(sentence);
 // Expected Output => 'Development'
 // ```
 
+var someShit = "I put the words in the sentence";
+
+function getThatWord (stringOfWords) {
+  var string = stringOfWords.split(" ");
+  var long_word = 0;
+  var other_words = null;
+  for (var i = 0; i <= string.length; i++) {
+    if (long_word < string[i].length) {
+      long_word = string[i].length;
+      other_words = string[i];
+    };
+  };
+  console.log(other_words);
+};
+
+getThatWord(someShit);
+
 // 1. Write a function to add up all the numbers in any given year. The year will be given as a string, the output should be a number. For example the input ```'1470'``` should give ```12```
 
 // 1. Write a function that will take in an array of full names, and only return the first name of each person. For example ```['Bradley Bouley', 'Robert Hajek']``` should return ```['Bradley', 'Robert']```
